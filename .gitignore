@@ -8,6 +8,11 @@ node_modules/
 # Composer
 vendor/
 
+
+# WordPress config
+wp-config.php
+
+
 # Environment files
 .env
 .env.local

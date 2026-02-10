@@ -86,14 +86,23 @@ $gallery_ids = $product->get_gallery_image_ids();
                                     <div class="price_box">
                                         <?php if ( $product->is_on_sale() ) : ?>
                                             <span class="old_price">
-                                                <?php echo wc_price( $product->get_regular_price() ); ?>
+                                                 <?php
+                                                    echo get_woocommerce_currency_symbol() .
+                                                        number_format( (float) $product->get_regular_price(), 2 );
+                                                    ?>
                                             </span>
                                             <span class="current_price">
-                                                <?php echo wc_price( $product->get_sale_price() ); ?>
+                                                <?php
+                                                    echo get_woocommerce_currency_symbol() .
+                                                        number_format( (float) $product->get_sale_price(), 2 );
+                                                ?>
                                             </span>
                                         <?php else : ?>
                                             <span class="current_price">
-                                                <?php echo wc_price( $product->get_price() ); ?>
+                                                 <?php
+                                                    echo get_woocommerce_currency_symbol() .
+                                                        number_format( (float) $product->get_price(), 2 );
+                                                ?>
                                             </span>
                                         <?php endif; ?>
                                     </div>
