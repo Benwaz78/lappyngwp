@@ -264,7 +264,7 @@ $gallery_ids = $product->get_gallery_image_ids();
                                             <a class="active" data-toggle="tab" href="#info" role="tab" aria-controls="info" aria-selected="false">Description</a>
                                         </li>
                                         <li>
-                                            <a data-toggle="tab" href="#sheet" role="tab" aria-controls="sheet" aria-selected="false">Specification</a>
+                                            <a data-toggle="tab" href="#sheet" role="tab" aria-controls="sheet" aria-selected="false">Full Specification</a>
                                         </li>
                                         
                                     </ul>
