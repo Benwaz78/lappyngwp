@@ -1,0 +1,33 @@
+[10-Feb-2026 13:25:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function is_product() in /home4/lappyng/public_html/wp-content/themes/lappy/functions/share-fb.php:4
+Stack trace:
+#0 /home4/lappyng/public_html/wp-includes/class-wp-hook.php(341): {closure}('')
+#1 /home4/lappyng/public_html/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters(NULL, Array)
+#2 /home4/lappyng/public_html/wp-includes/plugin.php(522): WP_Hook->do_action(Array)
+#3 /home4/lappyng/public_html/wp-includes/general-template.php(3197): do_action('wp_head')
+#4 /home4/lappyng/public_html/wp-content/themes/lappy/header.php(7): wp_head()
+#5 /home4/lappyng/public_html/wp-includes/template.php(814): require_once('/home4/lappyng/...')
+#6 /home4/lappyng/public_html/wp-includes/template.php(749): load_template('/home4/lappyng/...', true, Array)
+#7 /home4/lappyng/public_html/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#8 /home4/lappyng/public_html/wp-content/themes/lappy/front-page.php(1): get_header()
+#9 /home4/lappyng/public_html/wp-includes/template-loader.php(125): include('/home4/lappyng/...')
+#10 /home4/lappyng/public_html/wp-blog-header.php(19): require_once('/home4/lappyng/...')
+#11 /home4/lappyng/public_html/index.php(17): require('/home4/lappyng/...')
+#12 {main}
+  thrown in /home4/lappyng/public_html/wp-content/themes/lappy/functions/share-fb.php on line 4
+[10-Feb-2026 13:25:40 UTC] Cron reschedule event error for hook: action_scheduler_run_queue, Error code: invalid_schedule, Error message: Event schedule does not exist., Data: {"schedule":"every_minute","args":["WP Cron"],"interval":60}
+[10-Feb-2026 13:26:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function is_product() in /home4/lappyng/public_html/wp-content/themes/lappy/functions/share-fb.php:4
+Stack trace:
+#0 /home4/lappyng/public_html/wp-includes/class-wp-hook.php(341): {closure}('')
+#1 /home4/lappyng/public_html/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters(NULL, Array)
+#2 /home4/lappyng/public_html/wp-includes/plugin.php(522): WP_Hook->do_action(Array)
+#3 /home4/lappyng/public_html/wp-includes/general-template.php(3197): do_action('wp_head')
+#4 /home4/lappyng/public_html/wp-content/themes/lappy/header.php(7): wp_head()
+#5 /home4/lappyng/public_html/wp-includes/template.php(814): require_once('/home4/lappyng/...')
+#6 /home4/lappyng/public_html/wp-includes/template.php(749): load_template('/home4/lappyng/...', true, Array)
+#7 /home4/lappyng/public_html/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#8 /home4/lappyng/public_html/wp-content/themes/lappy/front-page.php(1): get_header()
+#9 /home4/lappyng/public_html/wp-includes/template-loader.php(125): include('/home4/lappyng/...')
+#10 /home4/lappyng/public_html/wp-blog-header.php(19): require_once('/home4/lappyng/...')
+#11 /home4/lappyng/public_html/index.php(17): require('/home4/lappyng/...')
+#12 {main}
+  thrown in /home4/lappyng/public_html/wp-content/themes/lappy/functions/share-fb.php on line 4
