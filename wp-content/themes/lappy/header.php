@@ -68,7 +68,7 @@
                                     <li class="facebook"><a href="<?php echo site_contact('sc_facebook'); ?>"><i class="fa fa-facebook"></i></a></li>
                                 <?php endif; ?>
                                 <?php if (has_site_contact('sc_instagram')) : ?>
-                                    <li class="facebook"><a href="<?php echo site_contact('sc_instagram'); ?>"><i class="fa fa-instagram"></i></a></li>
+                                    <li class="instagram"><a href="<?php echo site_contact('sc_instagram'); ?>"><i class="fa fa-instagram"></i></a></li>
                                 <?php endif; ?>
                             </ul>
                         </div>
