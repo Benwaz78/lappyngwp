@@ -21,7 +21,9 @@
                             <a href="javascript:void(0)"><i class="ion-android-close"></i></a>
                         </div>
                         <div class="antomi_message">
-                            <p>Get free shipping – Free 30 day money back guarantee</p>
+                            <?php if (has_site_contact('sc_address')) : ?>
+                                <p><?php echo site_contact('sc_address'); ?> </p>
+                            <?php endif; ?>
                         </div>
                         <div class="header_top_settings text-end">
                             <ul>
@@ -58,13 +60,16 @@
 
                         </div>
                         <div class="Offcanvas_footer">
-                            <span><a href="#"><i class="fa fa-envelope-o"></i> demo@example.com</a></span>
+                            <?php if (has_site_contact('sc_email1')) : ?>
+                                <span><a href="mailto:<?php echo site_contact('sc_email1'); ?>"><i class="fa fa-envelope-o"></i> <?php echo site_contact('sc_email1'); ?></a></span>
+                            <?php endif; ?>
                             <ul>
-                                <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li class="pinterest"><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-                                <li class="google-plus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <?php if (has_site_contact('sc_facebook')) : ?>
+                                    <li class="facebook"><a href="<?php echo site_contact('sc_facebook'); ?>"><i class="fa fa-facebook"></i></a></li>
+                                <?php endif; ?>
+                                <?php if (has_site_contact('sc_instagram')) : ?>
+                                    <li class="facebook"><a href="<?php echo site_contact('sc_instagram'); ?>"><i class="fa fa-instagram"></i></a></li>
+                                <?php endif; ?>
                             </ul>
                         </div>
                     </div>

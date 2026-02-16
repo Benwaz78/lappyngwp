@@ -196,4 +196,17 @@
     height: auto;
 }
 
+.site-btn {
+    font-size: 13px;
+    font-weight: 500;
+    padding: 0 10px;
+    display: inline-block;
+    border-radius: 4px;
+    height: 48px;
+    line-height: 48px;
+    color: #ffffff;
+    background: #c40316;
+    border: 1px solid #c40316;
+}
+
 
